@@ -1,4 +1,5 @@
 var TV = require("./tv");
+console.log('var TV: ', TV);
 
 // Create a new TV object
 var tv = new TV();
