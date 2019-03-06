@@ -9,9 +9,11 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////
 
 var Movies = require("./movies");
+var Concerts = require('./concerts');
 
 // Create a new MOVIE object
 var movie = new Movies();
+var concert = new Concerts();
 
 // Grab search command line argument
 var search = process.argv[2];
@@ -33,7 +35,20 @@ if (search === "movie") {
   console.log("Searching for a Movie");
   movie.findMovie(term);
 } 
-// else {
-//   movie.findActor(term);
-//   console.log("Searching for TV Actor");
+else if (search === "actor") {
+  movie.findActor(term);
+  console.log("Searching for an Actor");
+}
+// else if (search === "song") {
+//   song.findSong(term);
+//   console.log("Searching for a Song");
 // }
+else if (search === "artist") {
+  concert.findArtist(term);
+  console.log("Searching for an Artist");
+}
+// else if (search === "concert") {
+//   concert.findConcert(term);
+//   console.log("Searching for a concert");
+// }
+
