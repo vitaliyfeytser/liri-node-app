@@ -19,10 +19,12 @@
   "dependencies": {
     "axios": "^0.18.0",
     "debug": "^4.1.1",
+    "dotenv": "^6.2.0",
     "follow-redirects": "^1.7.0",
     "is-buffer": "^2.0.3",
     "moment": "^2.24.0",
     "momentjs": "^2.0.0",
-    "ms": "^2.1.1"
+    "ms": "^2.1.1",
+    "node-spotify-api": "^1.0.7"
   }
 }

@@ -37,7 +37,7 @@ var Concerts = function () {
                     divider,
                     "Artist(s): " + jsonData[1].lineup,
                     "Name of venue: " + jsonData[1].venue.name,
-                    "Venue location: " + jsonData[1].venue.city + ", " + jsonData[1].venue.region,
+                    "Venue location: " + jsonData[1].venue.city + " " + jsonData[1].venue.region + " " + jsonData[1].venue.country,
                     "Date of the Event: " + moment(jsonData[1].datetime).format("MM/DD/YYYY"),
                     " " // this is a spacer for a prettier console.log
                 ]
