@@ -1,0 +1,10 @@
+This app searches for movies, cocerts and songs using multiple APIs.
+App Use Instructions in Node.js CLI.
+
+Search commands should be entered in this fashion:
+
+$ node liri.js < search-command > < search-item >
+
+1. To search for a Movie use command < movie-this > < movie-name >
+2. To search for a Concert use command < concert-this > < artist-or-band-name >
+3. To search for a Song use command < spotify-this-song > < song-name >

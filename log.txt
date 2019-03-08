@@ -184,3 +184,191 @@ Name of venue: Visarno Arena
 Venue location: Florence  Italy
 Date of the Event: 06/02/2019
  
+------------------------------------------------------------
+
+Print-time: Thursday, March 7, 2019 7:10 PM
+
+------------------------------------------------------------
+
+Title: Mr. Nobody
+Year: 26 Sep 2013
+IMDB Rating: 7.8/10
+Rotten Tomatoes Rating: 67%
+Country: Belgium, Germany, Canada, France, USA, UK
+Language(s): English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+Log File: log.txt
+ 
+------------------------------------------------------------
+
+Print-time: Thursday, March 7, 2019 7:30 PM
+
+------------------------------------------------------------
+
+Title: Mr. Nobody
+Year: 26 Sep 2013
+IMDB Rating: 7.8/10
+Rotten Tomatoes Rating: 67%
+Country: Belgium, Germany, Canada, France, USA, UK
+Language(s): English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+Log File: log.txt
+ 
+------------------------------------------------------------
+
+Print-time: Thursday, March 7, 2019 7:44 PM
+
+------------------------------------------------------------
+
+Title: Mr. Nobody
+Year: 26 Sep 2013
+IMDB Rating: 7.8/10
+Rotten Tomatoes Rating: 67%
+Country: Belgium, Germany, Canada, France, USA, UK
+Language(s): English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+Log File: log.txt
+ 
+------------------------------------------------------------
+
+Print-time: Thursday, March 7, 2019 8:38 PM
+
+------------------------------------------------------------
+
+Title: Fury
+Year: 17 Oct 2014
+IMDB Rating: 7.6/10
+Rotten Tomatoes Rating: 77%
+Country: USA, China, UK
+Language(s): English, German
+Plot: A grizzled tank commander makes tough decisions as he and his crew fight their way across Germany in April, 1945.
+Actors: Brad Pitt, Shia LaBeouf, Logan Lerman, Michael Peña
+Log File: log.txt
+ 
+------------------------------------------------------------
+
+Print-time: Thursday, March 7, 2019 8:41 PM
+
+------------------------------------------------------------
+
+Title: Transformers
+Year: 03 Jul 2007
+IMDB Rating: 7.1/10
+Rotten Tomatoes Rating: 57%
+Country: USA
+Language(s): English, Spanish
+Plot: An ancient struggle between two Cybertronian races, the heroic Autobots and the evil Decepticons, comes to Earth, with a clue to the ultimate power held by a teenager.
+Actors: Shia LaBeouf, Megan Fox, Josh Duhamel, Tyrese Gibson
+Log File: log.txt
+ 
+------------------------------------------------------------
+
+Print-time: Thursday, March 7, 2019 8:48 PM
+
+------------------------------------------------------------
+
+Song    : XO TOUR Llif3
+Album   : Luv Is Rage 2
+Preview : https://p.scdn.co/mp3-preview/7add10ee576e9017030c09aa6d8bcaf682714859?cid=cdd472dde2e34191b572e8dade3364d0
+Artist  : Lil Uzi Vert
+Log File: log.txt
+ 
+------------------------------------------------------------
+
+Print-time: Thursday, March 7, 2019 8:49 PM
+
+------------------------------------------------------------
+
+Song    : Babe
+Album   : Bigger
+Preview : null
+Artist  : Sugarland
+Log File: log.txt
+ 
+------------------------------------------------------------
+
+Print-time: Thursday, March 7, 2019 8:49 PM
+
+------------------------------------------------------------
+
+Song    : Make Eem Run!
+Album   : XXXTENTACION Presents: Members Only, Vol. 4
+Preview : https://p.scdn.co/mp3-preview/36dd860eaf88556c9f252dfad15ac200a4f823f3?cid=cdd472dde2e34191b572e8dade3364d0
+Artist  : Bass Santana
+Log File: log.txt
+ 
+------------------------------------------------------------
+
+Print-time: Thursday, March 7, 2019 8:51 PM
+
+------------------------------------------------------------
+
+Song    : Make Eem Run!
+Album   : XXXTENTACION Presents: Members Only, Vol. 4
+Preview : https://p.scdn.co/mp3-preview/36dd860eaf88556c9f252dfad15ac200a4f823f3?cid=cdd472dde2e34191b572e8dade3364d0
+Artist  : Bass Santana
+Log File: log.txt
+ 
+------------------------------------------------------------
+
+Print-time: Thursday, March 7, 2019 8:51 PM
+
+------------------------------------------------------------
+
+Song    : Make Eem Run!
+Album   : XXXTENTACION Presents: Members Only, Vol. 4
+Preview : https://p.scdn.co/mp3-preview/36dd860eaf88556c9f252dfad15ac200a4f823f3?cid=cdd472dde2e34191b572e8dade3364d0
+Artist  : Bass Santana
+Log File: log.txt
+ 
+------------------------------------------------------------
+
+Print-time: Thursday, March 7, 2019 8:54 PM
+
+------------------------------------------------------------
+
+Song    : Make Eem Run!
+Album   : XXXTENTACION Presents: Members Only, Vol. 4
+Preview : https://p.scdn.co/mp3-preview/36dd860eaf88556c9f252dfad15ac200a4f823f3?cid=cdd472dde2e34191b572e8dade3364d0
+Artist  : Bass Santana
+Log File: log.txt
+ 
+------------------------------------------------------------
+
+Print-time: Thursday, March 7, 2019 8:54 PM
+
+------------------------------------------------------------
+
+Song    : Drip Too Hard (Lil Baby & Gunna)
+Album   : Drip Harder
+Preview : null
+Artist  : Lil Baby
+Log File: log.txt
+ 
+------------------------------------------------------------
+
+Print-time: Thursday, March 7, 2019 8:55 PM
+
+------------------------------------------------------------
+
+Song    : Before the Sunset
+Album   : Mad Dog, Pt. 1 (Original Television Soundtrack)
+Preview : https://p.scdn.co/mp3-preview/f108ab56ed11218915046a973a9f6c26ef40c050?cid=cdd472dde2e34191b572e8dade3364d0
+Artist  : Eric Nam
+Log File: log.txt
+ 
+------------------------------------------------------------
+
+Print-time: Thursday, March 7, 2019 9:03 PM
+
+------------------------------------------------------------
+
+Song    : Before the Sunset
+Album   : Mad Dog, Pt. 1 (Original Television Soundtrack)
+Preview : https://p.scdn.co/mp3-preview/f108ab56ed11218915046a973a9f6c26ef40c050?cid=cdd472dde2e34191b572e8dade3364d0
+Artist  : Eric Nam
+Log File: log.txt
+ 

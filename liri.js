@@ -12,8 +12,8 @@
 
 var Movies = require("./movies");
 var Concerts = require('./concerts');
-// var Songs = require('./songs');
-var Songs = require('./liri2.js');
+var Songs = require('./songs');
+// var Songs = require('./songs.js/index.js');
 
 // Create a new MOVIE object
 var movie = new Movies();
@@ -25,32 +25,37 @@ var search = process.argv[2];
 // Joining the remaining arguments since an actor or a Movie name may contain spaces
 var term = process.argv.slice(3).join(" ");
 
+var instructions = "\nThis app searches for movies, cocerts and songs using multiple APIs.\nApp Use Instructions in Node.js CLI.\n\nSearch commands should be entered in this fashion:\n\n$ node liri.js < search-command > < search item >\n\n1. To search for a Movie use command < movie-this > < movie name >\n2. To search for a Concert use command < concert-this > < artist or band name >\n3. To search for a Song use command < spotify-this-song > < song name >\n";
+
 // By default, if no search type is provided, search for a Movie
-if (!search) {
-  search = "movie-this";
-}
+if (!search || !term) {
+  console.log(instructions);
 
-// By default, if no search term is provided, search for "Cast Away"
-if (!term) {
-  term = "Mr. Nobody";
-}
+  // search = "movie-this";
+} else {
 
-// Print whether searching for a Movie or actor, print the term as well
-if (search === "movie-this") {
-  console.log("Searching for a Movie");
-  movie.findMovie(term);
-} 
-else if (search === "actor") {
-  movie.findActor(term);
-  console.log("Searching for an Actor");
-}
-else if (search === "spotify-this-song") {
-  song.findSong(term);
-  console.log("Searching for a Song");
-}
-else if (search === "concert-this") {
-  concert.findArtist(term);
-  console.log("Searching for an Artist");
-}
+  // By default, if no search term is provided, search for "Cast Away"
+  // if (!term) {
+  //   // console.log(instructions);
+  //   // term = "Mr. Nobody";
+  // }
 
+  // Print whether searching for a Movie or actor, print the term as well
+  if (search === "movie-this") {
+    console.log("\nSearching for a Movie\n");
+    movie.findMovie(term);
+  }
+  else if (search === "spotify-this-song") {
+    song.findSong(term);
+    console.log("\nSearching for a Song\n");
+  }
+  else if (search === "concert-this") {
+    concert.findArtist(term);
+    console.log("\nSearching for an Artist\n");
+  }
+  else if (search === "do-what-it-says") {
+    // movie.findActor(term);
+    // console.log("\nSearching for an Actor\n");
+  }
+}
 
