@@ -17,7 +17,7 @@ var searchLiri = process.argv[2];
 var termLiri = process.argv.slice(3).join(" ");
 
 // app instructions text
-var instructions = "\nThis app searches for movies, cocerts and songs using multiple APIs.\nApp Use Instructions in Node.js CLI.\n\nSearch commands should be entered in this fashion witout angle brackets:\n\n$ node liri.js < search-command > < search item >\n\n1. To search for a Movie use command < movie-this > < movie name >\n2. To search for a Concert use command < concert-this > < artist or band name >\n3. To search for a Song use command < spotify-this-song > < song name >\n";
+var instructions = "\nThis app searches for movies, cocerts and songs using multiple APIs.\n\nApp Use Instructions in Node.js CLI.\n\nSearch commands should be entered in this fashion witout angle brackets:\n\n$ node liri.js < search-command > < search item >\n\n1. To search for a Movie use command < movie-this > < movie name >\n2. To search for a Concert use command < concert-this > < artist or band name >\n3. To search for a Song use command < spotify-this-song > < song name >\n4. To search for a random item use command < do-what-it-says >\n\nLIRI will save the items you search into the 'log.txt' local file.\n";
 
 
 // this function is called with "do-what-it-says" command - it takes arguments from the 'random.txt' file
