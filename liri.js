@@ -1,61 +1,75 @@
-// require("dotenv").config();
-
-// var keys = require("./keys.js");
-
-// var Spotify = require('node-spotify-api');
-
-// var spotify = new Spotify(keys.spotify);
-
-
-// The code above is from hw instructions - activate when needed
-///////////////////////////////////////////////////////////////////////////////////////////////
-
+// require functionality files and fs for writing the log file
+var fs = require('fs');
 var Movies = require("./movies");
 var Concerts = require('./concerts');
 var Songs = require('./songs');
-// var Songs = require('./songs.js/index.js');
+// var Random = require('./random')
 
-// Create a new MOVIE object
+// Create a new objects
 var movie = new Movies();
 var concert = new Concerts();
 var song = new Songs();
+// var random = new Random();
 
 // Grab search command line argument
-var search = process.argv[2];
-// Joining the remaining arguments since an actor or a Movie name may contain spaces
-var term = process.argv.slice(3).join(" ");
+var searchLiri = process.argv[2];
+// Joining the remaining arguments with spaces
+var termLiri = process.argv.slice(3).join(" ");
 
-var instructions = "\nThis app searches for movies, cocerts and songs using multiple APIs.\nApp Use Instructions in Node.js CLI.\n\nSearch commands should be entered in this fashion:\n\n$ node liri.js < search-command > < search item >\n\n1. To search for a Movie use command < movie-this > < movie name >\n2. To search for a Concert use command < concert-this > < artist or band name >\n3. To search for a Song use command < spotify-this-song > < song name >\n";
+// app instructions text
+var instructions = "\nThis app searches for movies, cocerts and songs using multiple APIs.\nApp Use Instructions in Node.js CLI.\n\nSearch commands should be entered in this fashion witout angle brackets:\n\n$ node liri.js < search-command > < search item >\n\n1. To search for a Movie use command < movie-this > < movie name >\n2. To search for a Concert use command < concert-this > < artist or band name >\n3. To search for a Song use command < spotify-this-song > < song name >\n";
 
-// By default, if no search type is provided, search for a Movie
-if (!search || !term) {
-  console.log(instructions);
 
-  // search = "movie-this";
-} else {
+// this function is called with "do-what-it-says" command - it takes arguments from the 'random.txt' file
+var random = function () {
 
-  // By default, if no search term is provided, search for "Cast Away"
-  // if (!term) {
-  //   // console.log(instructions);
-  //   // term = "Mr. Nobody";
-  // }
+  var randomSearch = [];
 
-  // Print whether searching for a Movie or actor, print the term as well
-  if (search === "movie-this") {
-    console.log("\nSearching for a Movie\n");
-    movie.findMovie(term);
-  }
-  else if (search === "spotify-this-song") {
-    song.findSong(term);
-    console.log("\nSearching for a Song\n");
-  }
-  else if (search === "concert-this") {
-    concert.findArtist(term);
-    console.log("\nSearching for an Artist\n");
-  }
-  else if (search === "do-what-it-says") {
-    // movie.findActor(term);
-    // console.log("\nSearching for an Actor\n");
-  }
+  fs.readFile('random.txt', 'utf8', function (error, data) {
+    if (error) {
+      console.log('An error has occurred!');
+      console.log(error);
+    }
+
+    randomSearch = data.split(',');
+
+    LiriSearch(randomSearch[0], randomSearch[1]);
+
+  })
+
 }
 
+// the main search function of the LIRI app
+var LiriSearch = function (search, term) {
+
+  // By default, if no search type is provided, print app instructions
+  if (!search && !term) {
+    console.log(instructions);
+
+  } else {
+
+    // Print what you're searching for and call it's function
+    if (search === "movie-this") {
+      console.log("\nSearching for a Movie");
+      movie.findMovie(term);
+    }
+    else if (search === "spotify-this-song") {
+      song.findSong(term);
+      console.log("\nSearching for a Song");
+    }
+    else if (search === "concert-this") {
+      concert.findArtist(term);
+      console.log("\nSearching for an Artist");
+    }
+    else if (search === "do-what-it-says") {
+      console.log("\nSearching for a random item");
+      random();
+    } else {
+      // print instructions if commands do not match
+      console.log(instructions);
+    }
+
+  }
+
+}
+LiriSearch(searchLiri, termLiri);

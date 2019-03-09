@@ -44,13 +44,13 @@ var Songs = function () {
                     // * If no song is provided then your program will default to "The Sign" by Ace of Base.
 
                     divider,
-                    "Print-time: " + printTime,
+                    'Print-time.: ' + printTime,
                     divider,
-                    'Song    : ' + data.tracks.items[0].name,
-                    'Album   : ' + data.tracks.items[0].album.name,
-                    'Preview : ' + data.tracks.items[0].preview_url,
-                    'Artist  : ' + data.tracks.items[0].artists[0].name,
-                    "Log File: " + "log.txt",
+                    'Song_______ ' + data.tracks.items[0].name,
+                    'Album______ ' + data.tracks.items[0].album.name,
+                    'Preview____ ' + data.tracks.items[0].preview_url,
+                    'Artist_____ ' + data.tracks.items[0].artists[0].name,
+                    'Log File___ ' + 'log.txt',
                     " " // this is a spacer for a prettier console.log
                 ].join("\n");
                 // Append songData and the divider to log.txt, print songData to the console

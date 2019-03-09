@@ -33,12 +33,12 @@ var Concerts = function () {
                     // * Date of the Event (use moment to format this as "MM/DD/YYYY")
 
                     divider,
-                    "Print-time: " + printTime,
+                    "Print-time......... : " + printTime,
                     divider,
-                    "Artist(s): " + jsonData[1].lineup,
-                    "Name of venue: " + jsonData[1].venue.name,
-                    "Venue location: " + jsonData[1].venue.city + " " + jsonData[1].venue.region + " " + jsonData[1].venue.country,
-                    "Date of the Event: " + moment(jsonData[1].datetime).format("MM/DD/YYYY"),
+                    "Artist(s)____________ " + jsonData[1].lineup,
+                    "Name of venue________ " + jsonData[1].venue.name,
+                    "Venue location_______ " + jsonData[1].venue.city + " " + jsonData[1].venue.region + " " + jsonData[1].venue.country,
+                    "Date of the Event____ " + moment(jsonData[1].datetime).format("MM/DD/YYYY"),
                     " " // this is a spacer for a prettier console.log
                 ]
                     .join("\n");
@@ -47,7 +47,7 @@ var Concerts = function () {
                 fs.appendFile("log.txt", concertData, function (err) {
                     if (err) throw err;
                 });
-                console.log("concert concertData: ", concertData);
+                console.log(concertData);
 
             } else {
                 return console.log(divider),
