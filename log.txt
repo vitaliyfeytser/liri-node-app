@@ -125,3 +125,30 @@ Plot____________________A Grandpa turned 100-years-old and used to sit at a plac
 Actors__________________Efrat Ben-Zur
 Log File________________log.txt
  
+------------------------------------------------------------
+
+Print-time......... : Monday, March 11, 2019 3:28 PM
+
+------------------------------------------------------------
+
+Artist(s)____________ Imagine Dragons
+Name of venue________ Visarno Arena
+Venue location_______ Florence  Italy
+Date of the Event____ 06/02/2019
+ 
+------------------------------------------------------------
+
+Print-time..............Monday, March 11, 2019 3:29 PM
+
+------------------------------------------------------------
+
+Title___________________Fury
+Year____________________17 Oct 2014
+IMDB Rating_____________7.6/10
+Rotten Tomatoes Rating__77%
+Country_________________USA, China, UK
+Language(s)_____________English, German
+Plot____________________A grizzled tank commander makes tough decisions as he and his crew fight their way across Germany in April, 1945.
+Actors__________________Brad Pitt, Shia LaBeouf, Logan Lerman, Michael Peña
+Log File________________log.txt
+ 
