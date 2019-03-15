@@ -3,6 +3,8 @@ var fs = require('fs');
 var Movies = require("./movies");
 var Concerts = require('./concerts');
 var Songs = require('./songs');
+// colorized node cli
+var colors = require('colors');
 // var Random = require('./random')
 
 // Create a new objects
@@ -27,7 +29,7 @@ var random = function () {
 
   fs.readFile('random.txt', 'utf8', function (error, data) {
     if (error) {
-      console.log('An error has occurred!');
+      console.log('\nAn error has occurred!' .red);
       console.log(error);
     }
 
@@ -44,29 +46,57 @@ var LiriSearch = function (search, term) {
 
   // By default, if no search type is provided, print app instructions
   if (!search && !term) {
-    console.log(instructions);
+    console.log(instructions.blue);
 
   } else {
 
     // Print what you're searching for and call it's function
-    if (search === "movie-this") {
-      console.log("\nSearching for a Movie");
+
+    // spotify without a search term entered
+    if (search === "movie-this" && !term) {
+      console.log('\nNo movie name was provided..'.yellow);
+      console.log('\nDefault movie search for Fury with Brad Pitt: '.bgBlue);
+      movie.findMovie('Fury ');
+      console.log(instructions.blue);
+    }
+    else if (search === "movie-this") {
+      console.log("\nSearching for a Movie".bgBlue);
       movie.findMovie(term);
     }
+
+
+    // spotify without a search term entered
+    else if (search === "spotify-this-song" && !term) {
+      console.log('\nNo song name was provided..'.yellow);
+      console.log('\nDefault search for The Sign by Ace of Base: '.bgBlue);
+      song.findSong('The Sign Ace of Base');
+      console.log(instructions.blue);
+    }
+    // spotify with the search term
     else if (search === "spotify-this-song") {
       song.findSong(term);
-      console.log("\nSearching for a Song");
+      console.log("\nSearching for a Song".bgBlue);
     }
-    else if (search === "concert-this") {
+
+
+    // concert search without a search term
+    else if (search === "concert-this" && !term) {
+      console.log('\nNo artist or band was provided..'.yellow);
+      console.log(instructions.blue);
+      // cocert search with the search term
+    } else if (search === "concert-this") {
       concert.findArtist(term);
-      console.log("\nSearching for an Artist");
+      console.log("\nSearching for an Artist".bgBlue);
     }
+
+
+    // random search read from a file random.txt
     else if (search === "do-what-it-says") {
-      console.log("\nSearching for a random item");
+      console.log("\nSearching for a random item..".rainbow);
       random();
     } else {
       // print instructions if commands do not match
-      console.log(instructions);
+      console.log(instructions.blue);
     }
 
   }

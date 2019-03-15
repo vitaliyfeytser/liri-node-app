@@ -7,7 +7,7 @@ var printTime = moment(Date.now()).format('LLLL');
 // Create the Movies constructor
 var Movies = function () {
     // divider will be used as a spacer between the movie and other data data we print in log.txt
-    var divider = "\n------------------------------------------------------------\n";
+    var divider = "------------------------------------------------------------";
 
     // findmovie takes in the name of a movie and searches the OMDB API
     this.findMovie = function (movie) {
@@ -34,8 +34,8 @@ var Movies = function () {
                 if (typeof jsonData.Ratings[1] !== 0 && jsonData.Ratings[1] !== null && jsonData.Ratings[1] !== undefined) {
                     tomatoRating = jsonData.Ratings[1].Value;
                 }
-            } 
-            
+            }
+
             if (jsonData.length !== 0 && jsonData !== null && jsonData !== undefined) {
 
                 // movieData ends up being the string containing the movie data we will print to the console
@@ -67,11 +67,11 @@ var Movies = function () {
                 // Append movieData and the divider to log.txt, print movieData to the console
                 fs.appendFile("log.txt", movieData, function (err) {
                     if (err) throw err;
-                    console.log(movieData);
+                    console.log(movieData.green);
                 });
             } else {
                 return console.log(divider),
-                    console.log('There is no data for this movie.'),
+                    console.log('There is no data for this movie.'.yellow),
                     console.log(divider)
             }
         });

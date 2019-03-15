@@ -14,7 +14,7 @@ var printTime = moment(Date.now()).format('LLLL');
 // Create the Songs constructor
 var Songs = function () {
     // divider will be used as a spacer between the movie and other data data we print in log.txt
-    var divider = "\n------------------------------------------------------------\n";
+    var divider = "------------------------------------------------------------";
 
     var spotify = new Spotify(keys.spotify);
 
@@ -57,11 +57,11 @@ var Songs = function () {
                 fs.appendFile("log.txt", songData, function (err) {
                     if (err) throw err;
                 });
-                console.log(songData);
+                console.log(songData.green);
             } else {
                 // if no such song exists - inform user
                 return console.log(divider),
-                    console.log('There is no data for this song.'),
+                    console.log('There is no data for this song.'.yellow),
                     console.log(divider)
             }
         });

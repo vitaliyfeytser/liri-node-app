@@ -7,7 +7,7 @@ var printTime = moment(Date.now()).format('LLLL');
 // Create the Concerts constructor
 var Concerts = function () {
     // divider will be used as a spacer between the concert and other data data we print in log.txt
-    var divider = "\n------------------------------------------------------------\n";
+    var divider = "------------------------------------------------------------";
 
     // findArtist takes in the name of a artist and searches the Bands in Town API
     this.findArtist = function (artist) {
@@ -24,7 +24,7 @@ var Concerts = function () {
                     jsonData[keysArray[i]] = 'undefined';
                 }
             }
-
+            // code for making sure the object isn't empty
             if (jsonData.length !== 0 && jsonData !== null && jsonData !== undefined) {
                 // concertData ends up being the string containing the concert data we will print to the console
                 var concertData = [
@@ -35,10 +35,10 @@ var Concerts = function () {
                     divider,
                     "Print-time......... : " + printTime,
                     divider,
-                    "Artist(s)____________ " + jsonData[1].lineup,
-                    "Name of venue________ " + jsonData[1].venue.name,
-                    "Venue location_______ " + jsonData[1].venue.city + " " + jsonData[1].venue.region + " " + jsonData[1].venue.country,
-                    "Date of the Event____ " + moment(jsonData[1].datetime).format("MM/DD/YYYY"),
+                    "Artist(s)____________ " + jsonData[0].lineup,
+                    "Name of venue________ " + jsonData[0].venue.name,
+                    "Venue location_______ " + jsonData[0].venue.city + " " + jsonData[0].venue.region + " " + jsonData[0].venue.country,
+                    "Date of the Event____ " + moment(jsonData[0].datetime).format("MM/DD/YYYY"),
                     " " // this is a spacer for a prettier console.log
                 ]
                     .join("\n");
@@ -47,11 +47,11 @@ var Concerts = function () {
                 fs.appendFile("log.txt", concertData, function (err) {
                     if (err) throw err;
                 });
-                console.log(concertData);
+                console.log(concertData.green);
 
             } else {
                 return console.log(divider),
-                    console.log('There are no events for this artist.'),
+                    console.log('There are no events for this artist.'.yellow),
                     console.log(divider)
             }
         });
